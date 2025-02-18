@@ -11,7 +11,8 @@ const Hero = () => {
     <div className="hero">
       <div className="flex-1 pt-36 padding-x">
         <h1 className="hero__title">
-          Explore. Dream. Drive. Discover Your Next Ride with RideExpo.
+          Explore. Dream. Drive. Discover Your Next Ride with{" "}
+          <span className="text-blue-700">RideExpo.</span>
         </h1>
         <p className="hero__subtitle">
           Unveil the Beauty of Every Ride – Discover, Compare, and Choose Your
