@@ -9,7 +9,7 @@ export async function fetchCars(filters: FilterProps) {
   };
 
   const response = await fetch(
-    `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${manufacturer}&year=${year}&model=${model}&limit=${limit}&fuel_type=${fuel}`,
+    `${process.env.NEXT_PUBLIC_RAPIDAPI_URL}/v1/cars?make=${manufacturer}&year=${year}&model=${model}&limit=${limit}&fuel_type=${fuel}`,
     {
       headers: headers,
     }
@@ -34,7 +34,7 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 };
 
 export const generateCarImageUrl = (car: CarProps, angle?: string) => {
-  const url = new URL("https://cdn.imagin.studio/getimage");
+  const url = new URL(process.env.NEXT_PUBLIC_IMAGIN_API_URL!);
 
   const { make, year, model } = car;
 
