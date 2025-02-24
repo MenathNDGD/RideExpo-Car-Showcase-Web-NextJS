@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-    <a href="#" target="_blank">
+    <a href="https://ride-expo-car-showcase-web-next-js.vercel.app/" target="_blank">
       <img src="/public/preview.png" alt="Web Preview">
     </a>
   <br />
